@@ -1,0 +1,117 @@
+:root {
+  --display: "ZCOOL XiaoWei", "Noto Serif SC", "Songti SC", serif;
+  --brush: "Zhi Mang Xing", "ZCOOL XiaoWei", "KaiTi", cursive;
+}
+
+.brand-mark {
+  font-family: var(--brush);
+  font-size: 23px;
+}
+
+.brand-word {
+  font-family: var(--display);
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: .1em;
+}
+
+.hero h1,
+.intro h2,
+.menu-heading h2,
+.space-copy h2,
+.visit-content h2 {
+  font-family: var(--display);
+  font-weight: 400;
+}
+
+.hero h1 {
+  line-height: 1.4;
+}
+
+.hero h1 span,
+.intro h2 em,
+.menu-heading h2 em,
+.space-copy h2 em,
+.visit-content h2 em {
+  font-family: var(--brush);
+  font-size: 1.12em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .02em;
+}
+
+.hero h1 span {
+  color: #e1ad87;
+  white-space: nowrap;
+}
+
+.intro h2 em,
+.space-copy h2 em,
+.visit-content h2 em {
+  color: var(--orange);
+}
+
+.menu-heading h2 em {
+  color: #d8a47d;
+}
+
+.intro-copy {
+  padding: 26px 28px 28px;
+  background: #eee8dc;
+  border: 1px solid #e2d9ca;
+  position: relative;
+}
+
+.intro-copy::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 1px;
+  right: 20px;
+  top: 20px;
+  background: #bd603d;
+}
+
+.menu-heading > p {
+  background: #26392f;
+  border-left: 2px solid #bd805f;
+  padding: 14px 17px;
+}
+
+.dish-meta {
+  padding: 15px 14px 16px;
+  background: #2a3c32;
+  border: 1px solid #43544a;
+  margin-top: 12px;
+}
+
+.space-quote {
+  background: #eee8dc;
+  padding: 17px 18px;
+  border-left: 2px solid #bd805f;
+}
+
+.visit-details {
+  background: #1f3027;
+  border: 1px solid #48584e;
+  padding: 24px 25px 26px;
+}
+
+.visit-details .detail-row {
+  background: #293a31;
+  border-top-color: #526057;
+  padding: 14px 12px;
+}
+
+@media (max-width: 900px) {
+  .intro-copy { padding: 22px 20px 24px; }
+  .visit-details { padding: 20px; }
+}
+
+@media (max-width: 650px) {
+  .brand-word { font-size: 19px; }
+  .intro-copy { padding: 22px 19px 23px; }
+  .menu-heading > p { padding: 12px 14px; }
+  .dish-meta { padding: 12px 10px 13px; }
+  .visit-details { padding: 17px 15px 20px; }
+}

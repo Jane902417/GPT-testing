@@ -22,3 +22,25 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Dependencies and generated build output
+/node_modules/
+/dist/
+/coverage/
+/.vite/
+/outputs/
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Package-manager debug logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
